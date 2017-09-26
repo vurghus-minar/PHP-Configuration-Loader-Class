@@ -67,8 +67,6 @@ class ConfigTest extends TestCase {
      * */
     public function testMultipleConfigSources($config_array){
 
-        var_dump($config_array);
-
         $configMultipleConfigSources = New \Am\Config\Config($config_array, 1, true);
         $this->assertInstanceOf('Am\Config\Config', $configMultipleConfigSources);
         $this->assertTrue($configMultipleConfigSources->debug);

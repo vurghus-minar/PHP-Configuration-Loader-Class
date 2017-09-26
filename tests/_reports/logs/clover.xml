@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1506409769">
-  <project timestamp="1506409769">
+<coverage generated="1506413634">
+  <project timestamp="1506413634">
     <package name="Am\Config">
       <file name="C:\xampp\htdocs\projects\composer\PHPConfigurationLoaderClass\src/Config.php">
         <class name="Config" namespace="Am\Config" fullPackage="Am" package="Am">

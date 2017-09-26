@@ -101,6 +101,7 @@ foreach($config->directories as $dir){
 To allow PHP to parse YAML files, you will require php libyaml available.
 
 https://github.com/LegendOfMCPE/LoM-CMS/wiki/How-to-Install-LibYAML
+
 https://stackoverflow.com/questions/27122701/installing-php-yaml-extension-with-xampp-on-windows
 
 Note for Windows Xampp users, it is useful to copy yaml.dll to your xampp php folder as well to allow it to run in CLI (important mainly while running tests).
