@@ -9,7 +9,7 @@ The PHP configuration loader class helps the management and loading of applicati
 Via Composer:
 
 ```shell
-composer require "Am\Config"
+composer require am/config
 ```
 
 Or simply download the code and add to your project.
