@@ -82,7 +82,7 @@ object(Am\Config\Config)[2]
   public 'rooms' => int 10
 ```
 
-Ypou can now retrieve application configuration within your file as public vars follows:
+You can now retrieve application configuration within your file as public vars as follows:
 
 ```php
 
