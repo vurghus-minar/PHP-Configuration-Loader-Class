@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<checkstyle version="1.3.0">
+  <file name="Config.php">
+    <error line="0" severity="error" message="No summary was found for this file" source="phpDocumentor.file.PPC:ERR-50000"/>
+    <error line="96" severity="error" message="Argument $config is missing from the Docblock of load_config" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="96" severity="error" message="Argument $src is missing from the Docblock of load_config" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="96" severity="error" message="Argument $debug is missing from the Docblock of load_config" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="96" severity="error" message="No summary for method load_config()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="132" severity="error" message="Argument $config is missing from the Docblock of parse_configs" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="132" severity="error" message="No summary for method parse_configs()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="159" severity="error" message="Argument $config is missing from the Docblock of is_assoc" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="159" severity="error" message="No summary for method is_assoc()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="165" severity="error" message="Argument $config is missing from the Docblock of is_yaml_valid" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="165" severity="error" message="No summary for method is_yaml_valid()" source="phpDocumentor.file.PPC:ERR-50008"/>
+    <error line="193" severity="error" message="Argument $errstr is missing from the Docblock of show_errmsg" source="phpDocumentor.file.PPC:ERR-50015"/>
+    <error line="193" severity="error" message="No summary for method show_errmsg()" source="phpDocumentor.file.PPC:ERR-50008"/>
+  </file>
+</checkstyle>

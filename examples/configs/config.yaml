@@ -1,0 +1,8 @@
+root_path: C:/xampp/htdocs
+base_url: /
+directories:
+  controllers: controllers
+  models: models
+  views: views
+  core: core
+test_number: 10
