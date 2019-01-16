@@ -2,14 +2,19 @@
   "name": "am/config",
   "type": "library",
   "description": "configuration class for php",
-  "keywords": ["php","configuration","yaml","config"],
-  "homepage": "https://github.com/arvish15/PHP-Configuration-Loader-Class",
+  "keywords": [
+    "php",
+    "configuration",
+    "yaml",
+    "config"
+  ],
+  "homepage": "https://github.com/vurghus-minar/PHP-Configuration-Loader-Class",
   "license": "MIT",
   "authors": [
     {
-      "name": "Arvish K. Mungur",
-      "email": "arvish.mungur@outlook.com",
-      "homepage": "https://github.com/arvish15"
+      "name": "Vurghus Minar",
+      "email": "vurghus.minar@outlook.com",
+      "homepage": "https://github.com/vurghus-minar"
     }
   ],
   "require": {
@@ -22,7 +27,7 @@
   },
   "autoload": {
     "psr-4": {
-  		"Am\\Config\\": "src"
-  	}
+      "Am\\Config\\": "src"
+    }
   }
 }

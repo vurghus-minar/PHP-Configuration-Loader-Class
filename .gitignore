@@ -1,3 +1,4 @@
 vendor
 readme.html
 composer.lock
+/nbproject/private/

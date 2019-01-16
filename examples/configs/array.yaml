@@ -1,0 +1,10 @@
+my_array:
+  - one
+  - two
+  - three
+  - four
+my_var:
+  one
+  two
+  three
+  four
