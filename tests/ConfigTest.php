@@ -1,4 +1,4 @@
-<?php
+<?php /* Migration Commit */ ?><?php
 
 use \PHPUnit\Framework\TestCase;
 
