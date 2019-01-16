@@ -1,4 +1,4 @@
-<?php /* Migration Commit */ ?><?php
+<?php
 Namespace Am\Config;
 
 /**

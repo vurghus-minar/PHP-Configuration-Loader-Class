@@ -1,4 +1,4 @@
-<?php /* Migration Commit */ ?><?php
+<?php
 require dirname(__DIR__) . '/vendor/autoload.php';
 
 $config_file = array(
