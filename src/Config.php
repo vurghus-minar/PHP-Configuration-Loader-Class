@@ -50,14 +50,14 @@ class Config {
 
 
 	/**
-	 * Class Constructor creates the public variables from config file(s) and/or array(s) passed through $config parameter
+	 * Class Constructor.
 	 *
-	 * @param mixed $config mixed|array|string
+	 * @param mixed $config mixed|array|string Configuration yaml file(s) or arrays.
 	 * @param int   $src Default **0**. Optional. Accepted values are **0** or **1**.
 	 * @param bool  $debug Default **false**. Optional. Accepted values **true** or **false**.
 	 * @return Config->load_config() Calls the <strong>load_config</strong> method Creates the public variables from config file(s) and/or array(s) passed through
 	 */
-	public function __construct( $config, $src = 0, $debug = false ) {
+	public function __construct( $config, int $src = 0, $debug = false ) {
 
 		return $this->load_config( $config, $src, $debug );
 
@@ -65,13 +65,11 @@ class Config {
 
 
 	/**
-	 * Creates the public variables from config file(s) and/or array(s) passed through
-	 * $config parameter
+	 * Creates the public variables from config file(s) and/or array(s).
 	 *
-	 * @param mixed $config mixed|array|string
+	 * @param mixed $config mixed|array|string Configuration yaml file(s) or arrays.
 	 * @param int   $src Default **0**. Optional. Accepted values are **0** or **1**.
 	 * @param bool  $debug Default **false**. Optional. Accepted values **true** or **false**.
-	 * @return @see parse_configs() Creates the public variables from config file(s) and/or array(s) passed through
 	 */
 	public function load_config( $config, $src, $debug ) {
 
@@ -82,7 +80,7 @@ class Config {
 
 		$this->debug = $debug;
 
-		if ( is_int( $src ) && ( $src == 1 ) ) {
+		if ( 1 === $src ) {
 
 			if ( is_array( $config ) ) {
 				foreach ( $config as $config_obj ) {
@@ -93,13 +91,11 @@ class Config {
 				$this->parse_configs( $config );
 
 			}
-		} elseif ( is_int( $src ) && ( $src == 0 ) ) {
+		}
+
+		if ( 0 === $src ) {
 
 			$this->parse_configs( $config );
-
-		} else {
-
-			throw new Exception( '$src can only be 1 or 0 (0 is the default argument)' );
 
 		}
 
@@ -108,22 +104,17 @@ class Config {
 	/**
 	 * Validates and parses settings contained in mixed|array|string $config
 	 *
-	 * @param  mixed $config mixed|array|string
-	 * @return $vars Creates the public variables from config file(s) and/or array(s) passed through
+	 * @param  mixed $config mixed|array|string Configuration yaml file(s) or arrays.
 	 */
 	protected function parse_configs( $config ) {
 
 		if ( is_string( $config ) && file_exists( $config ) ) {
 
-			try {
-				$yaml_config = yaml_parse_file( $config );
+			$yaml_config = yaml_parse_file( $config );
 
-				foreach ( $yaml_config as $key => $value ) {
-					$key        = str_replace( ' ', '_', $key );
-					$this->$key = $value;
-				}
-			} catch ( Exception $e ) {
-				throw new Exception( 'Error:' . $e->getMessage() );
+			foreach ( $yaml_config as $key => $value ) {
+				$key        = str_replace( ' ', '_', $key );
+				$this->$key = $value;
 			}
 		} elseif ( $this->is_assoc( $config ) ) {
 
@@ -139,7 +130,7 @@ class Config {
 	/**
 	 * Checks whether an array is an associative array.
 	 *
-	 * @param  array $a
+	 * @param  array $a The array to verify.
 	 * @return boolean returns true if array is associative.
 	 */
 	protected function is_assoc( $a ) {
