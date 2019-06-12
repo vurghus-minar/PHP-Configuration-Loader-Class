@@ -1,6 +1,7 @@
 {
   "name": "am/config",
   "type": "library",
+  "version": "1.1.0",
   "description": "configuration class for php",
   "keywords": [
     "php",

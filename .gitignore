@@ -1,4 +1,4 @@
+docs
+tests/_reports
 vendor
-readme.html
 composer.lock
-/nbproject/private/

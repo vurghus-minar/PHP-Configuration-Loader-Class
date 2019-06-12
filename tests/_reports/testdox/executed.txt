@@ -1,10 +1,7 @@
 Config
  [x] If config file exists file name is string 
- [x] Yaml is valid
  [x] If config array is an acceptable argument
  [x] Multiple config sources 
  [x] Load multiple config sources 
- [x] Invalid src error message
  [x] Is array config 
- [x] Error message
 
